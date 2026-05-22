@@ -51,7 +51,7 @@ const manageProducts = async () => {
       
       const result = await response.json();
       
-      console.log('✅ --- NUEVO PRODUCTO CREADO ---');
+      console.log(' --- NUEVO PRODUCTO CREADO ---');
       console.log({ ...newProduct, id: result.id });
     } else if (command === 'DELETE' && param && param.includes('products/')) {
       const urlParts = param.split('/');
@@ -63,13 +63,13 @@ const manageProducts = async () => {
       
       const result = await response.json();
       
-      console.log(`🗑️ --- PRODUCTO ELIMINADO EXITOSAMENTE ---`);
+      console.log(` --- PRODUCTO ELIMINADO EXITOSAMENTE ---`);
       console.log(result);
     } else {
-      console.log('❌ Comando no reconocido. Verifica la sintaxis.');
+      console.log(' Comando no reconocido. Verifica la sintaxis.');
     }
   } catch (error) {
-    console.error('⚠️ Ocurrió un error al conectar con la API:', error.message);
+    console.error(' Ocurrió un error al conectar con la API:', error.message);
   }
 };
 
