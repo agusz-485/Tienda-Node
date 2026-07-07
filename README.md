@@ -105,3 +105,4 @@ Authorization: Bearer <token>
 - Si no existe un producto en `GET /api/products/:id` o `DELETE /api/products/:id`, la API responde con `404`.
 - El middleware global maneja rutas no encontradas con `404` y errores de servidor con `500`.
 
+# Proyecto-node
